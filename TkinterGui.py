@@ -58,7 +58,7 @@ class TKinterGUI(tk.Frame, ttk.Frame):
         Prints greating
         if no username is entered then "world" will be used.
         """
-        msg = """Hi welcome to your first GUI in python using tkinter """ + userName.get() or "World!"
+        msg = """Hi welcome to your first GUI in python using tkinter """ + self.userName.get() or "World!"
         self.displayName.set(msg)
 
 #call the page to life
